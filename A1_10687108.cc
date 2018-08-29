@@ -1,17 +1,19 @@
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 int main() 
 {
-  int n, i;
+  int x, i;
   bool isPrime = true;
   
   cout<< "Enter a positive integer: ";
-  cin  >> n;
+  cin  >> x;
   
-  for(i = 2; i<= n / 2; ++i)
+  for(i = 2; i<= x / 2; ++i)
   {
-  	if(n % i == 0)
+  	if(x % i == 0)
   	{
   		isPrime = false;
   		break;
